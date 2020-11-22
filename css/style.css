@@ -1,0 +1,530 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+header{
+
+    background-color: #f6f9f9;
+    }
+    .header_wrapper{
+    
+    width: 80%;
+    
+    margin: auto;
+    
+    display: flex;
+    
+    justify-content: space-between;
+    
+    padding: 20px 0;
+    align-items: center;
+    }
+    .logo{
+    
+    width: 20%;
+    }
+    nav{
+    
+width: 38%;
+    
+font-weight: bold;
+    }
+    nav ul{
+    
+    list-style: none;
+    
+    display: flex;
+    
+    justify-content: space-between;
+    }
+    nav ul li{
+    
+    }
+    nav ul li a{
+        
+    text-decoration: none;
+        
+    color: #2d3950;
+        
+    text-transform: uppercase;
+        
+    font-family:  lato;
+        
+    font-size: 12pt;
+    }
+
+   .banner{
+
+    background: url(../images/banner.png);
+    position: relative;
+    min-height: 100vh;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position: center;
+
+   } 
+   .banner-contant{
+
+width: 45%;
+
+position: absolute;
+
+top: 50%;
+
+left: 50%;
+
+transform: translate(-50%,-50%);
+
+text-align: center;
+}
+   .banner-contant h1{
+
+color: #ffff;
+
+font-size: 110px;
+
+text-transform: uppercase;
+
+font-family: lato;
+}
+   .banner-contant span{
+
+display: block;
+
+background-color: #15a4fa;
+
+
+height: 2px;
+
+}
+   .banner-contant p{
+
+margin: 7px;
+
+color: #ffff;
+
+font-size: 20px;
+
+font-family: lato;
+
+padding: 13px;
+
+}
+   .banner-contant button{
+
+background: transparent;
+
+border: none;
+
+color: #ffff;
+
+font-size: 18px;
+
+border: 2px solid #15a4fa;
+
+border-radius: 5px;
+
+margin: 26px;
+
+padding: 12px;
+
+cursor: pointer;
+transition: .4s all ease-in-out;
+}
+.banner-contant button:focus{
+    outline: none;
+}
+.banner-contant button:hover{
+    color: #ffff;
+    background-color: #15a4fa;
+}
+.icon{
+    
+color: #ffff;
+    
+font-size: 22px;
+    
+position: absolute;
+    
+left: 50%;
+    
+top: 84%;
+    
+transform: translate(-50%, -84%);
+animation: arrow 2s linear infinite;
+animation-direction: alternate;
+
+}
+
+@keyframes arrow{
+    0%{
+        top: 84%;
+    }
+    100%{
+        top: 89%;
+    }
+}
+
+.design{
+
+background: #f6f9f9;
+
+padding: 50px 0;
+}
+.wrapper{
+width: 80%;
+
+margin: auto;
+}
+.content{
+    text-align: center;
+}
+.content h1{
+
+color: #2d3950;
+font-size: 30px;
+font-family: lato;
+}
+.content p{
+
+padding:  20px 0;
+
+font-family: lato;
+
+color: #999999;
+
+}
+
+.feature-section{
+
+padding: 40px 0;
+}
+.first-frature{
+
+width: 30%;
+
+}
+.first-icon{
+
+text-align: center;
+
+font-size: 40px;
+
+height: 100px;
+
+width: 100px;
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+50,5fc3ff+100 */
+background: #48baff; /* Old browsers */
+background: -moz-linear-gradient(left,  #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+
+
+
+line-height: 100px;
+
+margin: auto;
+
+color: #fff;
+}
+.first-frature h4{
+
+text-align: center;
+
+padding: 10px;
+
+font-family: lato;
+
+color: #2d3950;
+
+text-transform: capitalize;
+
+}
+.first-frature p{
+
+text-align: center;
+
+font-size: 15px;
+
+color: #999999;
+
+font-family: lato;
+margin: 5px;
+}
+
+.flex{
+    
+display: flex;
+    
+justify-content: space-between;
+}
+
+.showcase{
+
+background-color: #f6f9f9;
+
+padding: 50px 0;
+}
+.heading{
+
+text-align: center;
+
+font-family: lato;
+}
+.heading h1{
+
+color: #2d3950;
+
+font-size: 30px;
+}
+.heading p{
+    
+color: #999999;
+    
+font-size: 15px;
+    
+padding: 10px;
+}
+.gallery{
+    display: flex;
+    margin: 50px 0;
+    justify-content: space-between;
+}
+.single-gallery{
+
+width: 30%;
+}
+.img{
+    position: relative;
+}
+.img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #48baff;
+    opacity: 0;
+    transition: 0.4s all ease-in-out;
+}
+.single-gallery:hover .img::before{
+    opacity: 0.5;
+    width: 100%;
+}
+.img img{
+    
+width: 100%;
+}
+.gallery-icon{
+
+position: absolute;
+
+top: 50%;
+
+left: 50%;
+
+transform: translate(-50%, -50%);
+transition: 0.6s all ease-in-out;
+opacity: 0;
+}
+.gallery-icon ul{
+
+list-style: none;
+
+}
+.gallery-icon ul li{
+    float: left;
+    margin: 5px;
+    border: 1px solid white;
+    color: #ffff;padding: 8px;
+    border-radius: 5px;
+}
+.gallery-icon ul li a{
+    color: #fff;
+}
+.single-gallery:hover .gallery-icon{
+    opacity: 1;
+}
+
+.footer-banner{
+    background: url(../images/footer-banner.png);
+    min-height: 600px;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #2b374be6;
+}
+.contact{
+
+    margin: auto;
+    padding: 35px 0;
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact h1{
+
+color: #ffff;
+
+font-family: lato;
+
+font-size: 35px;
+
+text-transform: capitalize;
+}
+.contact p{
+    
+font-family: lato;
+    
+color: #999999;
+    
+font-size: 12px;
+    
+padding: 5px;
+}
+form{
+
+padding: 20px 0;
+}
+
+.contact input[type='text'], .contact input[type='email'], .contact textarea{
+
+border: none;
+
+background: transparent;
+
+width: 100%;
+
+border: 1px solid #999999;
+
+padding: 10px 0;
+
+border-radius: 5px;
+
+margin: 10px 0;
+
+outline: none;
+color: #ffff;
+font-size: 18px;
+
+}
+.contact input:focus{
+    border: 1px solid #48baff;
+}
+.contact textarea:focus{
+    border: 1px solid #48baff;
+}
+
+.contact input[type='checkbox']{
+
+}
+.contact input[type='submit']{
+
+float: right;
+
+background: transparent;
+
+border: none;
+
+color: #ffff;
+
+border: 1px solid #48baff;
+
+padding: 11px 15px;
+
+border-radius: 5px;
+
+font-size: 15px;
+
+cursor: pointer;
+outline: none;
+transition: .4s all ease-in-out;
+}
+.contact input[type='submit']:focus{
+    outline: none;
+}
+.contact input[type='submit']:hover{
+    color: #ffff;
+    background-color: #15a4fa;
+
+}
+.contact input::placeholder, .contact textarea::placeholder{
+    padding-left: 10px;
+    font-size: 15px;
+    
+}
+.contact span{
+    
+color: #ffff;
+    
+font-family: lato;
+    
+padding-left: 5px;
+}
+footer{
+
+background-color: #f6f9f9;
+}
+.footer-wrapper{
+
+width: 80%;
+
+margin: auto;
+
+padding: 10px 0;
+
+display: flex;
+
+position: relative;
+
+justify-content: space-between;
+
+align-items: center;
+}
+.footer-wrapper h5{
+    font-family: lato;
+    color: #999999;
+    width: 20%;
+}
+.icon-wrapper{
+
+width: 16%;
+
+}
+
+.icon-wrapper ul{
+
+list-style: none;
+
+display: flex;
+
+justify-content: space-between;
+}
+.icon-wrapper ul li{
+
+border: 1px solid #48baff;
+
+padding: 11px;
+
+border-radius: 3px;
+
+background-color: #48baff;
+}
+.icon-wrapper ul li i{
+    color: white;
+}
