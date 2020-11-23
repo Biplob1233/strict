@@ -524,7 +524,16 @@ padding: 11px;
 border-radius: 3px;
 
 background-color: #48baff;
+cursor: pointer;
 }
 .icon-wrapper ul li i{
     color: white;
+}
+.icon-wrapper ul li:hover {
+    background-color:#2d3950;
+    transition: .4s all ease-in-out;
+    opacity: 1;
+}
+.icon-wrapper ul li:focus{
+    outline: none;
 }
