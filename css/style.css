@@ -503,7 +503,7 @@ align-items: center;
 }
 .icon-wrapper{
 
-width: 15%;
+width: 16%;
 
 }
 
@@ -517,14 +517,15 @@ justify-content: space-between;
 }
 .icon-wrapper ul li{
 
-border: 1px solid #48baff;
+border: 1px solid #ffffff;
 
-padding: 11px;
+padding: 13px;
 
-border-radius: 3px;
+border-radius: 4px;
 
 background-color: #48baff;
 cursor: pointer;
+
 }
 .icon-wrapper ul li i{
     color: white;
@@ -533,7 +534,5 @@ cursor: pointer;
     background-color:#2d3950;
     transition: .4s all ease-in-out;
     opacity: 1;
-}
-.icon-wrapper ul li:focus{
-    outline: none;
+ 
 }
